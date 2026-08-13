@@ -1,0 +1,195 @@
+[
+  {
+    "action": "navigate",
+    "url": "http://127.0.0.1:3126/",
+    "waitUntil": "networkidle0"
+  },
+  {
+    "action": "sleep",
+    "duration": "8s"
+  },
+  {
+    "action": "screenshot",
+    "file": "../screenshots/step_1_onboarding.png"
+  },
+  {
+    "action": "eval",
+    "expression": "(Array.from(document.querySelectorAll('button')).find(b => b.textContent.includes('Strict Internal 3% Cap')).click(), true)"
+  },
+  {
+    "action": "sleep",
+    "duration": "1s"
+  },
+  {
+    "action": "screenshot",
+    "file": "../screenshots/step_1_preset_strict.png"
+  },
+  {
+    "action": "eval",
+    "expression": "(Array.from(document.querySelectorAll('button')).find(b => b.textContent.includes('Custom Sliders')).click(), true)"
+  },
+  {
+    "action": "sleep",
+    "duration": "1s"
+  },
+  {
+    "action": "screenshot",
+    "file": "../screenshots/step_1_preset_custom.png"
+  },
+  {
+    "action": "eval",
+    "expression": "(Array.from(document.querySelectorAll('button')).find(b => b.textContent.includes('Access Compliance Cockpit')).click(), true)"
+  },
+  {
+    "action": "sleep",
+    "duration": "2s"
+  },
+  {
+    "action": "screenshot",
+    "file": "../screenshots/step_2_cockpit_idle.png"
+  },
+  {
+    "action": "eval",
+    "expression": "(Array.from(document.querySelectorAll('button')).find(b => b.textContent.includes('tx-valid-001')).click(), true)"
+  },
+  {
+    "action": "sleep",
+    "duration": "1s"
+  },
+  {
+    "action": "eval",
+    "expression": "(Array.from(document.querySelectorAll('button')).find(b => b.textContent.includes('Verify Compliances')).click(), true)"
+  },
+  {
+    "action": "sleep",
+    "duration": "4s"
+  },
+  {
+    "action": "screenshot",
+    "file": "../screenshots/step_2_cleared_happy_path.png"
+  },
+  {
+    "action": "eval",
+    "expression": "(Array.from(document.querySelectorAll('button')).find(b => b.textContent.includes('Reset')).click(), true)"
+  },
+  {
+    "action": "sleep",
+    "duration": "1s"
+  },
+  {
+    "action": "eval",
+    "expression": "(Array.from(document.querySelectorAll('button')).find(b => b.textContent.includes('tx-invalid-exceed-cap')).click(), true)"
+  },
+  {
+    "action": "sleep",
+    "duration": "1s"
+  },
+  {
+    "action": "eval",
+    "expression": "(Array.from(document.querySelectorAll('button')).find(b => b.textContent.includes('Verify Compliances')).click(), true)"
+  },
+  {
+    "action": "sleep",
+    "duration": "4s"
+  },
+  {
+    "action": "screenshot",
+    "file": "../screenshots/step_2_blocked_cap_breach.png"
+  },
+  {
+    "action": "eval",
+    "expression": "(Array.from(document.querySelectorAll('button')).find(b => b.textContent.includes('Reset')).click(), true)"
+  },
+  {
+    "action": "sleep",
+    "duration": "1s"
+  },
+  {
+    "action": "eval",
+    "expression": "(Array.from(document.querySelectorAll('button')).find(b => b.textContent.includes('tx-invalid-bad-backing')).click(), true)"
+  },
+  {
+    "action": "sleep",
+    "duration": "1s"
+  },
+  {
+    "action": "eval",
+    "expression": "(Array.from(document.querySelectorAll('button')).find(b => b.textContent.includes('Verify Compliances')).click(), true)"
+  },
+  {
+    "action": "sleep",
+    "duration": "4s"
+  },
+  {
+    "action": "screenshot",
+    "file": "../screenshots/step_2_blocked_bad_backing.png"
+  },
+  {
+    "action": "eval",
+    "expression": "(Array.from(document.querySelectorAll('button')).find(b => b.textContent.includes('Reset')).click(), true)"
+  },
+  {
+    "action": "sleep",
+    "duration": "1s"
+  },
+  {
+    "action": "eval",
+    "expression": "(Array.from(document.querySelectorAll('button')).find(b => b.textContent.includes('tx-invalid-bad-tenure')).click(), true)"
+  },
+  {
+    "action": "sleep",
+    "duration": "1s"
+  },
+  {
+    "action": "eval",
+    "expression": "(Array.from(document.querySelectorAll('button')).find(b => b.textContent.includes('Verify Compliances')).click(), true)"
+  },
+  {
+    "action": "sleep",
+    "duration": "4s"
+  },
+  {
+    "action": "screenshot",
+    "file": "../screenshots/step_2_blocked_tenure_mismatch.png"
+  },
+  {
+    "action": "eval",
+    "expression": "(Array.from(document.querySelectorAll('button')).find(b => b.textContent.includes('Reset')).click(), true)"
+  },
+  {
+    "action": "sleep",
+    "duration": "1s"
+  },
+  {
+    "action": "eval",
+    "expression": "(Array.from(document.querySelectorAll('button')).find(b => b.textContent.includes('tx-invalid-bad-aadhaar')).click(), true)"
+  },
+  {
+    "action": "sleep",
+    "duration": "1s"
+  },
+  {
+    "action": "eval",
+    "expression": "(Array.from(document.querySelectorAll('button')).find(b => b.textContent.includes('Verify Compliances')).click(), true)"
+  },
+  {
+    "action": "sleep",
+    "duration": "4s"
+  },
+  {
+    "action": "screenshot",
+    "file": "../screenshots/step_2_pii_redacted.png"
+  },
+  {
+    "action": "eval",
+    "expression": "(document.querySelector(\"button[aria-label='Toggle dark mode']\").click(), true)"
+  },
+  {
+    "action": "sleep",
+    "duration": "1s"
+  },
+  {
+    "action": "screenshot",
+    "file": "../screenshots/step_2_dark_mode.png"
+  }
+]

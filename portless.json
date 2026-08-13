@@ -1,0 +1,17 @@
+{
+  "version": "v1",
+  "projects": [
+    {
+      "name": "126-api",
+      "host": "126-api.localhost",
+      "target": "http://127.0.0.1:8126",
+      "command": "cd backend && uv run uvicorn main:app --host 127.0.0.1 --port $PORT"
+    },
+    {
+      "name": "126-ui",
+      "host": "126-ui.localhost",
+      "target": "http://127.0.0.1:3126",
+      "command": "cd frontend && pnpm dev --port $PORT"
+    }
+  ]
+}
